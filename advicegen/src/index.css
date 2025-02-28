@@ -1,7 +1,6 @@
 @font-face {
   font-family: 'Manrope';
-  src: url('/advicegen/public/fonts/Manrope-Bold.ttf');
-  
+  src: url('/fonts/Manrope-Bold.ttf');
 }
 :root {
   background-color: hsl(218, 23%, 16%);
