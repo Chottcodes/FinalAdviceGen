@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "../styles/component.css";
-import dividerMobile from '../../public/assets/dividermobile.svg';
-import dividerDesktop from '../../public/assets/dividerdesktop.svg';
-import icondice from '../../public/assets/icondice.svg';
+import dividerMobile from '/assets/dividermobile.svg';
+import dividerDesktop from '/assets/dividerdesktop.svg';
+import icondice from '/assets/icondice.svg';
 const AdviceComponent = () => {
   const [adviceNumber, setAdviceNumber] = useState("");
   const [adviceQuote, setAdviceQuote] = useState("");
