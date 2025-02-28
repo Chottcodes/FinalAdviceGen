@@ -3,17 +3,21 @@ import "../styles/component.css";
 import dividerMobile from '/assets/dividermobile.svg';
 import dividerDesktop from '/assets/dividerdesktop.svg';
 import icondice from '/assets/icondice.svg';
+import { fetchAdvice } from "../services/DataServices";
+
 const AdviceComponent = () => {
   const [adviceNumber, setAdviceNumber] = useState("");
   const [adviceQuote, setAdviceQuote] = useState("");
+  
   const getAdvice = async () => {
-    const response = await fetch("https://api.adviceslip.com/advice");
-    const data = await response.json();
-    setAdviceNumber(data.slip.id);
-    setAdviceQuote(data.slip.advice);
+    const Advicedata = await fetchAdvice();
+    setAdviceNumber(Advicedata.slip.id);
+    setAdviceQuote(Advicedata.slip.advice);
   };
   useEffect(() => {
+    
     getAdvice();
+
   }, []);
   return (
     <div className="w-[90%] h-[55%] md:h-[55%] md:w-[60%] lg:w-[35%] lg:h-[50%] rounded-2xl bg-[#323a49] relative transition-all duration-500 ease-in-out shadow-[0px_0px_33px_1px_rgba(0,0,0,0.3)]">

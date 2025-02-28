@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Manrope';
+  src: url('/advicegen/public/fonts/Manrope-Bold.ttf');
+  
+}
 :root {
   background-color: hsl(218, 23%, 16%);
   display: flex;
@@ -6,13 +11,9 @@
   width: 100%;
   height: 100%;
 }
-/* @font-face {
-  font-family: 'Manrope';
-  src: url('/advicegen/public/fonts/Manrope-Light.ttf');
-  font-weight: 800;
-} */
 body{
   width: 100%;
   height: 100%;
-  /* font-family: 'Manrope'; */
+  font-family: 'Manrope';
+  font-weight: bold;
 }

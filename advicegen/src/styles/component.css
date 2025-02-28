@@ -1,1 +1,7 @@
 @import "tailwindcss";
+@font-face {
+    font-family: 'Manrope';
+    src: url('/advicegen/public/fonts/Manrope-SemiBold.ttf');
+    font-weight: 800;
+  }
+  
