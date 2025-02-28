@@ -8,7 +8,7 @@
 }
 @font-face {
   font-family: 'Manrope';
-  src: url('./fonts/Manrope-VariableFont_wght.ttf');
+  src: url('../public/assets/fonts/Manrope-VariableFont_wght.ttf');
   font-weight: 800;
 }
 body{
