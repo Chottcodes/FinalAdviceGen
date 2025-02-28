@@ -6,13 +6,13 @@
   width: 100%;
   height: 100%;
 }
-@font-face {
+/* @font-face {
   font-family: 'Manrope';
-  src: url('/assets/fonts/Manrope-VariableFont_wght.ttf');
+  src: url('/advicegen/public/fonts/Manrope-Light.ttf');
   font-weight: 800;
-}
+} */
 body{
   width: 100%;
   height: 100%;
-  font-family: 'Manrope';
+  /* font-family: 'Manrope'; */
 }
