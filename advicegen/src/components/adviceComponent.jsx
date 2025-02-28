@@ -13,17 +13,18 @@ const AdviceComponent = () => {
     getAdvice();
   }, []);
   return (
-    <div className="w-[90%] h-[55%] md:h-[55%] md:w-[60%] lg:w-[40%] lg:h-[50%] rounded-2xl bg-[#323a49] relative transition-all duration-500 ease-in-out shadow-[0px_0px_33px_1px_rgba(0,0,0,0.3)]">
-      <div className="flex flex-col items-center gap-5 justify-center text-lg lg:text-xl w-[80%] h-[70%] m-auto">
-        <p className="text-[#52ffa8] lg:text-2xl tracking-widest">
+    <div className="w-[90%] h-[55%] md:h-[55%] md:w-[60%] lg:w-[35%] lg:h-[50%] rounded-2xl bg-[#323a49] relative transition-all duration-500 ease-in-out shadow-[0px_0px_33px_1px_rgba(0,0,0,0.3)]">
+      <div className="flex flex-col items-center gap-5 justify-center w-[80%] h-[70%] m-auto">
+        <p className="text-[#52ffa8] lg:text-xl tracking-widest">
           Advice #{adviceNumber}
         </p>
-        <h1 className="text-[25px] lg:text-[28px] text-[#d4e5ff] break-words text-center ">
+        <h1 className="text-[20px] lg:text-[28px] text-[#d4e5ff] break-words text-center ">
           "{adviceQuote}"
         </h1>
       </div>
       <div className="w-full h-[10%] flex justify-center pt-10 items-center">
-        <img src="../src/assets/dividermobile.svg" alt="divider"/>
+        <img className="md:hidden" src="../src/assets/dividermobile.svg" alt="divider"/>
+        <img className="hidden md:block w-[90%]" src="../src/assets/dividerdesktop.svg" alt="divider"/>
       </div>
       <div className="w-full h-0 bg-amber-100 flex justify-center items-center absolute bottom-0">
         <button
