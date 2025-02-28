@@ -23,8 +23,8 @@ const AdviceComponent = () => {
         </h1>
       </div>
       <div className="w-full h-[10%] flex justify-center pt-10 items-center">
-        <img className="md:hidden" src="/assets/dividermobile.svg" alt="divider"/>
-        <img className="hidden md:block w-[90%]" src="/assets/dividerdesktop.svg" alt="divider"/>
+        <img className="md:hidden" src="/assets/divider-mobile.svg" alt="divider"/>
+        <img className="hidden md:block w-[90%]" src="/assets/divider-desktop.svg" alt="divider"/>
       </div>
       <div className="w-full h-0 bg-amber-100 flex justify-center items-center absolute bottom-0">
         <button
