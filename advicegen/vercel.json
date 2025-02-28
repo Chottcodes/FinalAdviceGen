@@ -1,16 +1,16 @@
 {
+    "builds": [
+      {
+        "src": "dist/**/*",
+        "use": "@vercel/static"
+      }
+    ],
     "rewrites": [
       {
         "source": "/:path*",
         "destination": "/index.html"
       }
-    ],
-    "redirects": [
-      {
-        "source": "/index.html",
-        "destination": "/",
-        "permanent": true
-      }
     ]
   }
+  
   
