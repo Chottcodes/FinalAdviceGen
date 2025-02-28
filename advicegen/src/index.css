@@ -1,6 +1,8 @@
 @font-face {
   font-family: 'Manrope';
   src: url('/fonts/Manrope-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
 }
 :root {
   background-color: hsl(218, 23%, 16%);
@@ -14,5 +16,5 @@ body{
   width: 100%;
   height: 100%;
   font-family: 'Manrope';
-  font-weight: bold;
+ 
 }
