@@ -1,16 +1,3 @@
-{
-    "builds": [
-      {
-        "src": "advicegen/dist/**/*",
-        "use": "@vercel/static"
-      }
-    ],
-    "rewrites": [
-      {
-        "source": "/:path*",
-        "destination": "/index.html"
-      }
-    ]
-  }
+{ "rewrites": [{ "source": "/(.*)", "destination": "/" }] }
   
   
