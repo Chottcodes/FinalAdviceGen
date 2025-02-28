@@ -13,8 +13,8 @@ const AdviceComponent = () => {
     getAdvice();
   }, []);
   return (
-    <div className="w-[90%] h-[60%] md:h-[55%] md:w-[60%] lg:w-[40%] lg:h-[50%] rounded-2xl bg-[#323a49] relative transition-all duration-500 ease-in-out shadow-[0px_0px_33px_1px_rgba(0,0,0,0.3)]">
-      <div className="flex flex-col items-center gap-5 justify-center text-lg lg:text-xl w-[80%] h-[50%] m-auto mt-15">
+    <div className="w-[90%] h-[55%] md:h-[55%] md:w-[60%] lg:w-[40%] lg:h-[50%] rounded-2xl bg-[#323a49] relative transition-all duration-500 ease-in-out shadow-[0px_0px_33px_1px_rgba(0,0,0,0.3)]">
+      <div className="flex flex-col items-center gap-5 justify-center text-lg lg:text-xl w-[80%] h-[70%] m-auto">
         <p className="text-[#52ffa8] lg:text-2xl tracking-widest">
           Advice #{adviceNumber}
         </p>
@@ -23,12 +23,12 @@ const AdviceComponent = () => {
         </h1>
       </div>
       <div className="w-full h-[10%] flex justify-center pt-10 items-center">
-        <img src="../src/assets/dividermobile.svg" />
+        <img src="../src/assets/dividermobile.svg" alt="divider"/>
       </div>
       <div className="w-full h-0 bg-amber-100 flex justify-center items-center absolute bottom-0">
         <button
           onClick={getAdvice}
-          className="w-[70px] h-[70px] hover:shadow-[0px_0px_47px_21px_rgba(82,255,168,0.2)] bg-[#52ffa8] rounded-full flex justify-center items-center"
+          className="w-[70px] h-[70px] lg:w-[65px] lg:h-[65px] hover:shadow-[0px_0px_47px_21px_rgba(82,255,168,0.2)] bg-[#52ffa8] rounded-full flex justify-center items-center"
         >
           <img
             className="w-[30px]"
