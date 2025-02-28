@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "../styles/component.css";
+import dividerMobile from '../../public/assets/dividermobile.svg';
+import dividerDesktop from '../../public/assets/dividerdesktop.svg';
+import icondice from '../../public/assets/icondice.svg';
 const AdviceComponent = () => {
   const [adviceNumber, setAdviceNumber] = useState("");
   const [adviceQuote, setAdviceQuote] = useState("");
@@ -23,8 +26,8 @@ const AdviceComponent = () => {
         </h1>
       </div>
       <div className="w-full h-[10%] flex justify-center pt-10 items-center">
-        <img className="md:hidden" src="/assets/divider-mobile.svg" alt="divider"/>
-        <img className="hidden md:block w-[90%]" src="/assets/divider-desktop.svg" alt="divider"/>
+        <img className="md:hidden" src={dividerMobile} alt="divider"/>
+        <img className="hidden md:block w-[90%]" src={dividerDesktop} alt="divider"/>
       </div>
       <div className="w-full h-0 bg-amber-100 flex justify-center items-center absolute bottom-0">
         <button
@@ -33,7 +36,7 @@ const AdviceComponent = () => {
         >
           <img
             className="w-[30px]"
-            src="/assets/icon-dice.svg"
+            src={icondice}
             alt="Dice Icon"
           />
         </button>
